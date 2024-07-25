@@ -9,8 +9,15 @@ class LatestPage extends StatelessWidget {
       child: ListView.builder(
           itemCount: 50,
           itemBuilder: (BuildContext context, int index) {
-        return Text("Yangilik");
-      }),
+            return const Expanded(
+              child: Column(
+                children: [
+                  Text("Dunyo"),
+                  Row(children: [Text("Kecha"), Icon(Icons.watch)])
+                ],
+              ),
+            );
+          }),
     );
   }
 }
