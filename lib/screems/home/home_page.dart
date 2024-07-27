@@ -16,16 +16,28 @@ class HomePage extends StatelessWidget {
           bottom: const TabBar(
             isScrollable: true,
             tabs: [
-              Tab(child:  Text("SO'NGI YANGILIKLAR",),),
-              Tab(child:  Text("ASOSIY YANGILIKLAR"),),
-              Tab(child:  Text("ENG KO'P KO'RILGAN"),),
+              Tab(
+                child: Text(
+                    style: TextStyle(color: Colors.black),
+                    "SO'NGI YANGILIKLAR"),
+              ),
+              Tab(
+                child: Text(
+                    style: TextStyle(color: Colors.white),
+                    "ASOSIY YANGILIKLAR"),
+              ),
+              Tab(
+                child: Text(
+                    style: TextStyle(color: Colors.white),
+                    "ENG KO'P KO'RILGAN"),
+              ),
             ],
           ),
         ),
         body: TabBarView(
           children: [
-           const  LatestPage(),
-            Container(color:  Colors.blue),
+            LatestPage(),
+            Container(color: Colors.blue),
             Container(color: Colors.green),
           ],
         ),
