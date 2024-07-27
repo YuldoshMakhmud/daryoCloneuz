@@ -9,7 +9,7 @@ class HomePage extends StatelessWidget {
     return DefaultTabController(
       length: 3,
       child: Scaffold(
-        drawer: Drawer(),
+        drawer: const Drawer(),
         appBar: AppBar(
           backgroundColor: Colors.blue,
           title: const Text("Daryo"),
@@ -24,7 +24,7 @@ class HomePage extends StatelessWidget {
         ),
         body: TabBarView(
           children: [
-            LatestPage(),
+           const  LatestPage(),
             Container(color:  Colors.blue),
             Container(color: Colors.green),
           ],
